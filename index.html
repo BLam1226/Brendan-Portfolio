@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add title to webpage -->
+    <title>Brendan's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Brendan Lam's</h1>
+      <nav>
+        <ul>
+          <!-- Add id so that anchor can direct user to content -->
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work-sample">Work Examples</a></li>
+          <li><a href="#contact-info">Contact Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Add a background image along with a portrait image of myself that lays ontop of the background on the top left -->
+    <section class="background">
+      <img class="portrait" src="./assets/images/Self-Portrait.jpg" alt="portrait image of myself" />
+    </section>
+
+    <main>
+      <section>
+        <!-- Add header on top of list of work sample cards -->
+        <section id="work-sample" class="work-sample">
+          <h2>Work Samples</h2>
+          <!-- First sample of work with bigger size by adding an id to specify properties -->
+          <section class="work-sample-card" id="first-project">
+            <h3>Horiseon Project</h3>
+            <p>Module 1 Challenge of bootcamp to restructure HTML and CSS code for Horiseon Marketing Agency Webpage.</p>
+            <!-- Add anchor to the webpage of projects using image -->
+            <a href="https://blam1226.github.io/Horiseon-MA-Webpage/"><img id="sample-image" src="./assets/images/Horiseon-Project.png" alt="Image of Horiseon project webpage" style="contain:content"/></a>
+          </section>
+          <!-- Smaller size work sample card compared to the first listed work sample using a different id -->
+          <section class="work-sample-card" id="other-project">
+            <h3>Prework-Study-Guide</h3>
+            <p>This was a Prework-Study-Guide assignment to be done before the start of the UPenn Full Stack Web Dev Bootcamp.</p>
+            <!-- Add anchor to the webpage of projects using image -->
+            <a href="https://blam1226.github.io/prework-study-guide/"><img id="sample-image" src="./assets/images/Prework-Study-Guide.png" alt="Image of Prework-Study-Guide assignment" style="contain:content"/></a>
+          </section>
+          <!-- Smaller size work sample card compared to the first listed work sample using a different id -->
+          <section class="work-sample-card" id="other-project">
+            <h3>Placeholder For Other Work</h3>
+            <p>This is a temporary description placeholder for a future project that currently does not exist.</p>
+            <!-- Add sample image to work sample card as placeholder for future works -->
+            <img id="sample-image" src="./assets/images/Placeholder-Image.jpg" alt="Placeholder image for future works" style="contain:content" />
+          </section>
+          <!-- Smaller size work sample card compared to the first listed work sample using a different id -->
+          <section class="work-sample-card" id="other-project">
+            <h3>Placeholder For Other Work</h3>
+            <p>This is a temporary description placeholder for a future project that currently does not exist.</p>
+            <!-- Add sample image to work sample card as placeholder for future works -->
+            <img id="sample-image" src="./assets/images/Placeholder-Image.jpg" alt="Placeholder image for future works" style="contain:content" />
+          </section>
+        </section>
+      </section>
+      <!-- Having bio on the side of webpage using the aside element -->
+      <aside id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>I am a 25 year old male currently living in Bucks County PA and taking a full stack web developer bootcamp.
+          My only experience is a Python and JavaScript class from my High School Days which was quite a few years ago.
+          I love technology and always want to have the most up to date devices and I like to tinker with computers.</p>
+      </aside>
+    </main>
+  </body>
+
+  <!-- Put the contact info in the footer so that it is at the bottom of the webpage -->
+  <footer id="contact-info">
+    <h2>Contact Info:</h2>
+      <ul>
+        <li><span>Email:</span> brendanlam0@gmail.com</li>
+        <li><span>GitHub:</span> BLam1226</li>
+        <li><span>Cell:</span> (646)-884-3972</li>
+      </ul>
+  </footer>
+
+</html>
