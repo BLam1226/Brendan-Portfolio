@@ -24,6 +24,9 @@ Go to the correct URL webpage and select the content you wish to view and use th
 
 Webpage: [https://blam1226.github.io/Brendan-Portfolio/]
 
+![Screenshot 2023-06-08 052703](https://github.com/BLam1226/Brendan-Portfolio/assets/127125695/4d67cdbf-6b74-463d-ae71-118f2b984b31)
+![Screenshot 2023-06-08 052732](https://github.com/BLam1226/Brendan-Portfolio/assets/127125695/f0e7fa66-c0ca-4b3e-91b4-681f3c6cf04a)
+
 ### Credits
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
