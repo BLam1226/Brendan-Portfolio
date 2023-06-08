@@ -1,0 +1,208 @@
+/* display body content of the webpage as columns */
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  background-color: #505a5b;
+}
+
+/* properties of header on top of the webpage */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #27dee4;
+  color: navy;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+/* using pseudo element to add the word 'Portfolio' after my name in style */
+h1::after {
+  font-family: monospace;
+  content: 'Portfolio';
+  color: blueviolet;
+  margin-left: 5px;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 180%;
+}
+
+/* make list display as flex on one line */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav li {
+  font-size: 175%;
+  justify-content: space-between;
+  margin: 25px;
+  text-decoration: underline;
+}
+
+nav a {
+  font-family: 'Times New Roman', Times, serif;
+  color: navy;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Background image for the webpage in CSS instead of in the index.html */
+.background {
+  min-height: 600px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../images/Space-Background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+}
+
+section {
+  flex: 1 1 0;
+}
+
+/* properties to make portrait of myself appear on top of the background and determine the size and location */
+.portrait {
+  position: relative;
+  width: 190px;
+  height: 270px;
+}
+
+.work-sample {
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
+  flex: 1 1 300px;
+  color: blue;
+  padding: 0 15px 15px;
+  margin: 0 20px 40px;
+}
+
+/* style of header on top of the list of work samples */
+.work-sample h2 {
+  font-size: 200%;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.work-sample-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+  background-color:rgb(125, 192, 233);
+  color: blue;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px grey;
+  padding: 20px;
+  margin: 25px;
+}
+
+/* determine the size of image inside of work sample card */
+.work-sample-card #sample-image {
+  width: 300px;
+  height: 200px;
+}
+
+.work-sample-card h3 {
+  text-align: center;
+  font-size: 125%;
+  text-decoration: underline;
+}
+
+/* used to make first work sample card larger than the rest */
+#first-project {
+  transform: scale(1.1);
+}
+
+/* used to make other work sample cards smaller than the first project */
+#other-project {
+  transform: scale(.9);
+}
+
+.work-sample-card,.work-sample-card h2 {
+  transition: all 0.5s ease-in-out;
+}
+
+/* pseudo class to add accent shadow on card after hovering over the selected content */
+.work-sample-card:hover,.work-sample-card:hover h2 {
+  box-shadow: inset 0px 0px 8px navy, 0 0 15px navy;
+}
+
+aside {
+  width: 25%;
+  padding: 10px;
+  margin: 10;
+  border-radius: 10px;
+  border-style: dotted;
+  background-color: aliceblue;
+  color: blue;
+}
+
+aside h2 {
+  font-size: 150%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-me {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+/* make the contact info header bigger than the list of contact info */
+#contact-info h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 125%;
+  padding: 2%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+/* media query to adjust webpage for different screen size */
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* keep self portrait of myself the same size regardless of screen size */
+  .portrait {
+    min-width: 190px;
+    min-height: 270px;
+  }
+}
