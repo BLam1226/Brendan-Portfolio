@@ -4,7 +4,7 @@
 
 ### Project Description
 
-Wrote code for a work portfolio webpage that containts biography, samples of completed work/projects, and list of contact info.
+Wrote code for a work portfolio webpage that contains biography, samples of completed work/projects, and list of contact info.
 
 ### Table of Contents
 
